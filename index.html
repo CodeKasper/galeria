@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Galería de Fotos</title>
+    <link rel="stylesheet" href="css/lightbox.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -15,11 +16,13 @@
           <h2>Galería de Fotos</h2>
         </div>
       </div>
-      <div class="row">
-        <div class="card-item padd-15">
-          <div class="card-item-inner">
-            <div class="card-img shine">
-              <img src="img/foto1.jpg" alt="foto1">
+      <div class="row" >
+        <div class="card-item padd-15" >
+          <div class="card-item-inner" >
+            <div class="card-img shine" >
+              <a href="img/foto1.jpg" data-lightbox="galeria" data-title="Acá puede poner la descripción de la fotografía">
+                <img src="img/foto1.jpg">
+              </a>  
             </div>
             <div class="card-date">
                 4 julio 2020
@@ -29,7 +32,9 @@
         <div class="card-item padd-15">
             <div class="card-item-inner">
               <div class="card-img shine">
-                <img src="img/foto2.jpg" alt="Foto2">
+                <a href="img/foto2.jpg" data-lightbox="galeria" data-title="Acá puede poner la descripción de la fotografía">
+                  <img src="img/foto2.jpg">
+                </a> 
               </div>
               <div class="card-date">
                   4 julio 2020
@@ -39,7 +44,9 @@
           <div class="card-item padd-15">
             <div class="card-item-inner">
               <div class="card-img shine">
-                <img src="img/foto3.jpg" alt="Foto3">
+                <a href="img/foto3.jpg" data-lightbox="galeria" data-title="Acá puede poner la descripción de la fotografía">
+                  <img src="img/foto3.jpg">
+                </a> 
               </div>
               <div class="card-date">
                   20 junio 2020
@@ -49,7 +56,9 @@
           <div class="card-item padd-15">
             <div class="card-item-inner">
               <div class="card-img shine">
-                <img src="img/foto4.jpg" alt="Foto4">
+                <a href="img/foto4.jpg" data-lightbox="galeria" data-title="Acá puede poner la descripción de la fotografía">
+                  <img src="img/foto4.jpg">
+                </a> 
               </div>
               <div class="card-date">
                   18 junio 2020
@@ -59,7 +68,9 @@
           <div class="card-item padd-15">
             <div class="card-item-inner">
               <div class="card-img shine">
-                <img src="img/foto5.jpg" alt="Foto5">
+                <a href="img/foto5.jpg" data-lightbox="galeria" data-title="Acá puede poner la descripción de la fotografía">
+                  <img src="img/foto5.jpg">
+                </a> 
               </div>
               <div class="card-date">
                   10 junio 2020
@@ -69,7 +80,9 @@
           <div class="card-item padd-15">
             <div class="card-item-inner">
               <div class="card-img shine">
-                <img src="img/foto6.jpg" alt="Foto6">
+                <a href="img/foto6.jpg" data-lightbox="galeria" data-title="Acá puede poner la descripción de la fotografía">
+                  <img src="img/foto6.jpg">
+                </a> 
               </div>
               <div class="card-date">
                   5 junio 2020
@@ -81,7 +94,9 @@
   </section>
   <!-- End Card -->
   <div class="copy">
-    <div class="copy-heart">Hecho con<img src="img/heart.svg" alt="heart">por <a href="https://github.com/CodeKasper" target="_blank" rel="noopener noreferrer">CodeKasper</a></div>
+    <div class="copy-heart">Hecho con<img src="img/heart.svg" alt="heart"> por <a href="https://github.com/CodeKasper" target="_blank" rel="noopener noreferrer">CodeKasper</a></div>
   </div>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+  <script src="js/lightbox.min.js"></script>
 </body>
 </html>
