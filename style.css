@@ -197,28 +197,49 @@ body {
     box-shadow: 0 0 30px rgba(0,0,0,0.1),1px 1px 3px rgba(0,0,0,0.2);
 }
 
-.copy .copy-heart {
-    text-align: center;
-    color: #000000;
-    font-family: 'Dancing Script', cursive;
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    height: 50px;
+    margin-bottom: 15px;
+  }
+  .face {
+    background: #000;
+    border-radius: 50%;
+    padding: 4px;
+    display: inline-block;
+    margin-right: 5px;
+  }
+  .eye {
+    background: #e74900;
+    width:8px;
+    height:10px;
+    clip-path: polygon(75% 0%, 100% 0%, 100% 30%, 100% 70%, 83% 56%, 50% 50%, 20% 55%, 0% 71%, -6% 29%, 10% 0%);
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0px 5px;
+  }
+  .eye:nth-last-child(1) {
+    margin: 0;
+  }
+  .copy {
+      display: inline-block;
+  }
+  .copy span {
+      font-size: 14px;
+      font-weight: 600;
+      color: #e74900;
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  .copy a {
     font-size: 18px;
-    margin-bottom: 20px;
-}
-.copy .copy-heart a {
-    color: #302e4d;
-    font-size: 16px;
+    font-weight: 500;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-style: italic;
+    color: #000;
     text-decoration: none;
-    font-weight: bold;
-}
-.copy .copy-heart a:hover {
-    color: #000000;
-}
-.copy .copy-heart img {
-    width: 15px;
-    height: 15px;
-    animation: heart 2s infinite ease;
-    margin: 0 10px;
-}
+  }
 @keyframes heart {from{transform:scale(1)}10%{transform:scale(1.2)}}
 /** Responsive **/
 @media (max-width: 991px) {
